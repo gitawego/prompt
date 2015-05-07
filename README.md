@@ -32,7 +32,8 @@ var questions = [
         id:'myname' //define id
     },
     {
-        question: 'Last Name' //optional
+        question: 'Last Name' //optional,
+        color:"green" //show label in green color
     },
     {
         question: 'Age',
@@ -94,6 +95,9 @@ favourites.create().then(function (error, answers) {
 });
 
 ````
+
+####color list:
+red, green, orange, blue, purple, cyan, lightGray, darkGray, lightRed, lightGreen, lightOrange, lightBlue, lightPurple, lightCyan
 
 ### Question object
 The `question object` has 4 properties that you can specify:
