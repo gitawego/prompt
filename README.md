@@ -28,7 +28,8 @@ var questions = [
         
         required: true, // required
         
-        default: 'John' // default value
+        default: 'John' // default value,
+        id:'myname' //define id
     },
     {
         question: 'Last Name' //optional
@@ -58,7 +59,7 @@ profile.create().then(function (error, answers) {
    return;
   }
 
-  var name = answers.Name;
+  var name = answers.myname;
   var lastName = answers.LastName;
   var age = answers.Age;
 
